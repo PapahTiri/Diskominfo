@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Filament\Resources\BeritaResource\Pages;
+
+use App\Filament\Resources\BeritaResource;
+use Filament\Actions;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateBerita extends CreateRecord
+{
+    protected static string $resource = BeritaResource::class;
+
+    protected function getFormActions(): array
+    {
+        return [
+            $this->getCreateFormAction(), // Hanya menyertakan tombol "Create"
+            $this->getCancelFormAction(), // Menyertakan tombol "Cancel"
+        ];
+    }
+}

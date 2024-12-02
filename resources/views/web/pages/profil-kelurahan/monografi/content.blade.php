@@ -1,0 +1,1 @@
+<embed src="{{ asset('storage/uploads/monografi/' . $monografi->file_dokumen) }}" type="application/pdf" width="100%" height="600px">
